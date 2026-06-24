@@ -1,0 +1,26 @@
+{
+    "project": "CropGuard AI",
+    "model_name": "mobilenetv3large_transfer",
+    "dataset": "Kaggle New Plant Diseases Dataset",
+    "num_classes": 38,
+    "image_size": [
+        224,
+        224
+    ],
+    "batch_size": 32,
+    "head_epochs": 5,
+    "fine_tune_epochs": 5,
+    "total_epochs": 10,
+    "train_images": 70295,
+    "valid_images": 17572,
+    "metrics": {
+        "accuracy": 0.9792283177375793,
+        "loss": 0.061757247895002365,
+        "top_3_accuracy": 0.9986342191696167
+    },
+    "notes": [
+        "MobileNetV3Large is trained as a lightweight deployment-friendly comparison model.",
+        "The pretrained base was frozen first, then partially fine-tuned.",
+        "This model is compared against Custom CNN and EfficientNetV2B0."
+    ]
+}

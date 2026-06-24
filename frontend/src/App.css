@@ -1,0 +1,268 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #eef7ef;
+  color: #17351f;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 40px 24px;
+}
+
+.hero {
+  max-width: 980px;
+  margin: 0 auto 32px;
+  text-align: center;
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: #2f7d46;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 1.05;
+}
+
+.subtitle {
+  max-width: 760px;
+  margin: 18px auto 0;
+  color: #4c604f;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(280px, 420px) minmax(320px, 1fr);
+  gap: 24px;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #d9e8dc;
+  border-radius: 24px;
+  box-shadow: 0 20px 50px rgba(23, 53, 31, 0.09);
+  padding: 24px;
+}
+
+.card h2 {
+  margin: 0 0 18px;
+  font-size: 1.35rem;
+}
+
+.upload-box {
+  display: flex;
+  min-height: 150px;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #8ab99a;
+  border-radius: 18px;
+  background: #f6fbf7;
+  color: #2f7d46;
+  cursor: pointer;
+  font-weight: 700;
+  text-align: center;
+  padding: 20px;
+}
+
+.upload-box input {
+  display: none;
+}
+
+.preview-block,
+.gradcam-block,
+.top-list,
+.prediction-main {
+  margin-top: 22px;
+}
+
+.section-label {
+  margin: 0 0 10px;
+  color: #6c7e70;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.preview-image,
+.gradcam-image {
+  width: 100%;
+  border-radius: 18px;
+  border: 1px solid #dce9df;
+  object-fit: cover;
+}
+
+.preview-image {
+  max-height: 320px;
+}
+
+.gradcam-image {
+  max-height: 430px;
+}
+
+.predict-button {
+  width: 100%;
+  margin-top: 22px;
+  border: none;
+  border-radius: 16px;
+  background: #2f7d46;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 800;
+  padding: 15px 18px;
+}
+
+.predict-button:disabled {
+  background: #a9b9ad;
+  cursor: not-allowed;
+}
+
+.error-message {
+  margin-top: 16px;
+  color: #b42318;
+  background: #fff1f0;
+  border: 1px solid #ffccc7;
+  border-radius: 14px;
+  padding: 12px;
+}
+
+.empty-state {
+  color: #647067;
+  line-height: 1.7;
+}
+
+.prediction-main {
+  padding: 18px;
+  border-radius: 18px;
+  background: #f0faf2;
+  border: 1px solid #cfe8d4;
+}
+
+.prediction-main h3 {
+  margin: 0;
+  color: #1f6c36;
+  font-size: 1.8rem;
+  word-break: break-word;
+}
+
+.confidence {
+  margin: 10px 0 0;
+  font-weight: 800;
+}
+
+.top-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 13px 0;
+  border-bottom: 1px solid #edf2ee;
+}
+
+.top-item span {
+  word-break: break-word;
+}
+
+.note,
+.disclaimer {
+  color: #5f7063;
+  line-height: 1.6;
+  font-size: 0.92rem;
+}
+
+.disclaimer {
+  margin-top: 18px;
+  padding: 14px;
+  background: #fff8e6;
+  border: 1px solid #f2d48c;
+  border-radius: 14px;
+}
+
+@media (max-width: 860px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .page {
+    padding: 28px 16px;
+  }
+}
+
+.confidence-warning {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.confidence-warning.high {
+  background: #eaf8ee;
+  border: 1px solid #b8e0c2;
+  color: #1f6c36;
+}
+
+.confidence-warning.medium {
+  background: #fff8e6;
+  border: 1px solid #f2d48c;
+  color: #7a5200;
+}
+
+.confidence-warning.low {
+  background: #fff1f0;
+  border: 1px solid #ffccc7;
+  color: #9f1d15;
+}
+
+.crop-select-label {
+  display: block;
+  margin-bottom: 18px;
+  color: #4c604f;
+  font-weight: 800;
+}
+
+.crop-select {
+  width: 100%;
+  margin-top: 8px;
+  padding: 14px 16px;
+  border: 1px solid #bfd8c5;
+  border-radius: 14px;
+  background: #f8fcf9;
+  color: #17351f;
+  font-size: 1rem;
+}
+
+.validation-message {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.validation-message.accepted {
+  background: #eaf8ee;
+  border: 1px solid #b8e0c2;
+  color: #1f6c36;
+}
+
+.validation-message.uncertain_confidence,
+.validation-message.crop_mismatch {
+  background: #fff1f0;
+  border: 1px solid #ffccc7;
+  color: #9f1d15;
+}

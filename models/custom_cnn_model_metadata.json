@@ -1,0 +1,24 @@
+{
+    "project": "CropGuard AI",
+    "model_name": "custom_cnn_baseline",
+    "dataset": "Kaggle New Plant Diseases Dataset",
+    "num_classes": 38,
+    "image_size": [
+        224,
+        224
+    ],
+    "batch_size": 32,
+    "epochs": 10,
+    "train_images": 70295,
+    "valid_images": 17572,
+    "metrics": {
+        "accuracy": 0.9614158868789673,
+        "loss": 0.11532531678676605,
+        "top_3_accuracy": 0.9976098537445068
+    },
+    "notes": [
+        "This is the baseline CNN model.",
+        "It is used for comparison against transfer learning models.",
+        "This model should not be treated as final production-level performance."
+    ]
+}

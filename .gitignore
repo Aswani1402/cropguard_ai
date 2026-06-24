@@ -1,0 +1,46 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Local IDE and environment files
+.idea/
+.vscode/
+.env
+frontend/.env
+
+# Data
+data/raw/
+data/processed/
+data/splits/
+
+# Trained model binaries
+models/*.keras
+models/*.h5
+models/*.pt
+
+# MLflow
+mlruns/
+mlflow.db
+mlflow.db-shm
+mlflow.db-wal
+
+# Generated outputs
+outputs/*
+!outputs/metrics/
+!outputs/metrics/**
+
+# Kaggle training outputs
+kaggle_outputs/
+Kaggle_outputs/
+kaggle_efficientnet_outputs/
+kaggle_mobilenet_outputs/
+
+# Frontend dependencies and build output
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# OS files
+.DS_Store

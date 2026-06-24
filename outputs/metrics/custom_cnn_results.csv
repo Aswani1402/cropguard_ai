@@ -1,0 +1,2 @@
+model,accuracy,loss,top_3_accuracy,epochs,image_size,batch_size,train_images,valid_images,num_classes
+custom_cnn_baseline,0.9614158868789673,0.11532531678676605,0.9976098537445068,10,"(224, 224)",32,70295,17572,38

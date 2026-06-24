@@ -1,0 +1,19 @@
+{
+    "image_size": [
+        224,
+        224
+    ],
+    "batch_size": 32,
+    "num_classes": 38,
+    "train_dir": "C:\\Users\\Aswini_Ayappan\\OneDrive\\Desktop\\project\\cropguard_ai\\data\\raw\\kaggle\\New Plant Diseases Dataset(Augmented)\\New Plant Diseases Dataset(Augmented)\\train",
+    "valid_dir": "C:\\Users\\Aswini_Ayappan\\OneDrive\\Desktop\\project\\cropguard_ai\\data\\raw\\kaggle\\New Plant Diseases Dataset(Augmented)\\New Plant Diseases Dataset(Augmented)\\valid",
+    "class_indices_file": "C:\\Users\\Aswini_Ayappan\\OneDrive\\Desktop\\project\\cropguard_ai\\models\\class_indices.json",
+    "class_weights_file": "C:\\Users\\Aswini_Ayappan\\OneDrive\\Desktop\\project\\cropguard_ai\\models\\class_weights.json",
+    "augmentation": [
+        "RandomFlip(horizontal)",
+        "RandomRotation(0.08)",
+        "RandomZoom(0.10)",
+        "RandomContrast(0.10)"
+    ],
+    "normalization": "Model-specific preprocessing will be applied inside training scripts."
+}

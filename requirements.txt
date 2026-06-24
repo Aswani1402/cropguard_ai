@@ -1,0 +1,40 @@
+# Core ML / Deep Learning
+tensorflow
+keras
+
+# Dataset loading
+datasets
+huggingface-hub
+
+# Data handling
+numpy
+pandas
+scikit-learn
+
+# Image processing
+pillow
+opencv-python
+
+# Visualization
+matplotlib
+seaborn
+
+# Progress / utilities
+tqdm
+python-dotenv
+
+# Experiment tracking
+mlflow
+
+# Backend API
+fastapi
+uvicorn
+python-multipart
+
+# Testing
+pytest
+httpx
+
+tensorflow-datasets
+
+tabulate

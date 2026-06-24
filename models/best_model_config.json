@@ -1,0 +1,7 @@
+{
+  "best_model_name": "EfficientNetV2B0",
+  "model_file": "efficientnetv2b0_best.keras",
+  "image_size": [224, 224],
+  "num_classes": 38,
+  "reason": "Highest validation accuracy and macro F1-score among trained models."
+}

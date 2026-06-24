@@ -1,0 +1,2 @@
+model,accuracy,loss,top_3_accuracy,head_epochs,fine_tune_epochs,total_epochs,image_size,batch_size,train_images,valid_images,num_classes
+efficientnetv2b0,0.9795697927474976,0.06747744977474213,0.9987480044364929,5,5,10,"(224, 224)",32,70295,17572,38

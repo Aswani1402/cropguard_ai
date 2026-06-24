@@ -1,0 +1,2 @@
+model,accuracy,loss,top_3_accuracy,head_epochs,fine_tune_epochs,total_epochs,image_size,batch_size,train_images,valid_images,num_classes
+mobilenetv3large,0.9792283177375793,0.061757247895002365,0.9986342191696167,5,5,10,"(224, 224)",32,70295,17572,38
