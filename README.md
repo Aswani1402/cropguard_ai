@@ -305,7 +305,7 @@ cropguard_ai/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/cropguard-ai.git
+git clone https://github.com/Aswani1402/cropguard-ai.git
 cd cropguard-ai
 ```
 
@@ -518,5 +518,3 @@ Built a plant disease detection system using TensorFlow/Keras, EfficientNetV2B0,
 ## Disclaimer
 
 CropGuard AI is an educational AI prototype. It is not an expert agricultural diagnosis system. Predictions should be reviewed carefully before making real-world agricultural decisions.
-#   c r o p g u a r d _ a i  
- 
